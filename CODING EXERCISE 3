@@ -1,0 +1,65 @@
+package selfProgramming;
+
+import java.util.Scanner;// used to key in data
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+	
+		int num1;// declare 5 integer variables and assign values
+		int num2;
+		int num3;
+		int num4;
+		int num5;
+		int num6;
+		int sum;
+		double bal1;
+		double bal2;
+		double amount;
+		String name;
+		char y;
+		char n;
+
+
+		Scanner scanMe = new Scanner(System.in);// create new object for scanner input
+		
+		System.out.println("Please enter name: ");
+		name= scanMe.nextLine();
+		System.out.println("My name is " + name);
+		
+		System.out.println("Please enter your balance: ");
+		bal1 = scanMe.nextDouble();
+		
+		System.out.println("Please enter amount: ");
+		amount = scanMe.nextDouble();
+		
+		System.out.println("Please enter amount 1: ");
+		num1 = scanMe.nextInt();
+		System.out.println("Please enter amount 2: ");
+		num2 = scanMe.nextInt();
+		System.out.println("Please enter amount 3: ");
+		num3 = scanMe.nextInt();
+		System.out.println("Please enter amount 4: ");
+		num4 = scanMe.nextInt();
+		System.out.println("Please enter amount 5: ");
+		num5 = scanMe.nextInt();
+		System.out.println("Please enter amount 6: ");
+		num6 = scanMe.nextInt();
+		
+	System.out.println("Name is " + name);
+		sum = num1 + num2 + num3 + num4 + num5 + num6; 
+		System.out.println("The sum is " + sum);
+		
+		bal2 = bal1 - amount;
+		System.out.println("Your current balance is RM " + bal2);
+		System.out.println("Do you want to proceed : ");
+		
+		y = scanMe.next().charAt(0);
+		System.out.println("YES" + y);
+		
+		n = scanMe.next().charAt(0);
+		System.out.println("NO " + n);
+    
+    }
+}
+		
